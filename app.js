@@ -28,13 +28,13 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1IjoiZXJuMGxkIiwiYSI6ImNrNjByMHI3ODA2c2IzbHFpc2lmemZrZTYifQ.hPQL649P0KTUqQhIAMLLPQ'
 
 }).addTo(map);
-var marker = L.marker([positionLat, positionLong]).addTo(map); 
+//var marker = L.marker([positionLat, positionLong]).addTo(map); 
 map.locate({setView: true, maxZoom: 16});
 function onLocationFound(e) {
     var radius = e.accuracy;
 
     L.marker(e.latlng).addTo(map)
-        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+        .bindPopup("Olet " + radius + " metrin säteellä. ÄIJJJÄÄÄÄ").openPopup();
 
     L.circle(e.latlng, radius).addTo(map);
 }
