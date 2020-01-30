@@ -34,7 +34,7 @@ function onLocationFound(e) {
     var radius = e.accuracy;
 
     L.marker(e.latlng).addTo(map)
-        .bindPopup("Olet " + radius + " metrin säteellä. ÄIJJJÄÄÄÄ").openPopup();
+        .bindPopup("Olet " + radius + " metrin säteellä tästä pisteestä. ÄIJJJÄÄÄÄ").openPopup();
 
     L.circle(e.latlng, radius).addTo(map);
 }
